@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body id="body">
+	<div id="container">
+		<button id="level1">1 <div class="star">&#127775;</div> </button>
+		<button id="level2">2 <div class="star">&#127775;&#127775;</div> </button>
+		<button id="level3">3 <div class="star">&#127775;&#127775;&#127775;</div> </button>
+		<button id="level4">4 <div class="star">&#127775;&#127775;&#127775;&#127775;</div> </button>
+	</div>
+
+
+<script>
+
+	document.querySelector('#level1').onclick = function() {
+		document.body.style.background = 'purple';
+		alert('Level 1 dipilih!');
+	}
+
+		document.querySelector('#level2').onclick = function() {
+		document.body.style.background = 'orange';
+		alert('Level 2 dipilih!');
+	}
+
+		document.querySelector('#level3').onclick = function() {
+		document.body.style.background = 'cornflowerblue';
+		alert('Level 3 dipilih!');
+	}
+	document.querySelector('#level4').onclick = function() {
+		document.body.style.background = 'yellow';
+		alert('Level 4 dipilih!');
+	}
+</script>
+
+
+	<style>
+		#body{
+			background-color:  #1b2b34;
+		}
+		#container{
+			background: #ccc;
+			padding: 1em;
+			width: 400px;
+			margin: auto;
+		}
+		button {
+			font-size: 2em;
+			font-family: fantasy;
+			padding: .4em;
+			background: #eee;
+			border: 0;
+			border-radius: 5px;
+			margin: auto;
+			
+			outline: none;
+		}
+		button:hover {
+			background: orange;
+			cursor: pointer;
+		}
+		.star{
+			width: 70px;
+			font-size: 1rem;
+		}
+	</style>
+</body>
+</html>
